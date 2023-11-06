@@ -1,6 +1,6 @@
 # AlgoExecutor - Algorithm Exploration Web Application
 
-![image](https://github.com/DeepNets-US/AlgoExecutor/assets/118154709/f058cffb-be92-4e3c-a918-6eb544f27e72) 
+![image](https://github.com/DeepNets-US/AlgoExecutor/assets/118154709/8019291b-e53f-4423-97b2-979965746d4f)
 
 **Author**: Utkarsh Saxena
 **Degree**: Bachelor of Technology in Computer Science & Engineering - AIML
@@ -32,7 +32,7 @@ AlgoExecutor is a web application designed for exploring fundamental algorithms 
 
 ## Screenshots
 
-![image](https://github.com/DeepNets-US/AlgoExecutor/assets/118154709/cfcdfc67-1a78-4613-acef-fc58d569c40b)
+![image](https://github.com/DeepNets-US/AlgoExecutor/assets/118154709/f37dcbad-50d1-4ad9-9694-e3e276aa6db4)
 ![image](https://github.com/DeepNets-US/AlgoExecutor/assets/118154709/9542c8ed-3095-4361-8c24-6285886e0b6d)
 ![image](https://github.com/DeepNets-US/AlgoExecutor/assets/118154709/e7563a4e-71fc-45e8-9bd2-218415f29c7e)
 
