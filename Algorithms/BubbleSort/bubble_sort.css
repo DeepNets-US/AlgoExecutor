@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(26, 36, 35);
+}
+
+h2 {
+    color: darkorange;
+}
+
+p,
+li {
+    color: darkgreen;
+}
+
+#header {
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(26, 36, 35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: translateX(-80%);
+    }
+
+    100% {
+        transform: translateX(80%);
+    }
+}
+
+#logo {
+    animation: textAnimation 10s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+.container {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.bubble_sort-description {
+    text-align: left;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.bubble_sort-form {
+    margin: 20px auto;
+    max-width: 85%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.bubble_sort-form form {
+    text-align: center;
+}
+
+.bubble_sort-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.bubble_sort-form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.bubble_sort-form button {
+    width: 25%;
+    font-size: 20px;
+    margin-top: 15px;
+    background-color: darkorange;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.bubble_sort-output {
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+
+.bubble_sort-output h2 {
+    font-size: 1.5em;
+}
+
+.bubble_sort-output p {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#sort-button {
+    background-color: darkorange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#sort-button:hover {
+    background-color: yellowgreen;
+}

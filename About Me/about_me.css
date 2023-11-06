@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+#introduction {
+    padding: 20px;
+}
+
+#introduction h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#introduction p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#projects {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#projects h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+strong {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#projects strong,
+#projects p {
+    border-left: 3px solid #007BFF;
+    padding-left: 10px;
+}
+
+#projects strong,
+#projects p {
+    animation: fadeIn 2s both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#links {
+    text-align: center;
+}
+
+#introduction .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+#introduction .btn:hover {
+    font-size: 15px;
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+
+#accomplishments {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+#accomplishments h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.section-heading {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s both;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.card-content {
+    text-align: left;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.card-content:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+.card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.card a,
+.card p {
+    border-left: 3px solid #007BFF;
+    padding-left: 10px;
+}
+
+.courses {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.courses h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.courses .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s both;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.courses .card-content {
+    text-align: left;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.courses .card:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+
+.courses .card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.courses .card a,
+.courses .card p {
+    border-left: 3px solid #007BFF;
+    padding-left: 10px;
+}
+
+
+.project-card {
+    margin: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 16px;
+}

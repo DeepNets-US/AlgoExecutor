@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bubble_sort.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Bubble Sort - AlgoExecuter</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="logo" style="color: darkorange;"><strong>Bubble Sort</strong></h1>
+    </div>
+
+
+    <div class="bubble_sort-form" style="margin-top: 10%;">
+        <form id="bubble_sort-form" onsubmit="return false;">
+            <label for="input-array" style="font-size: 24px; color: darkorange">Enter the Array:</label>
+            <input type="text" id="input-array" required>
+            <button id="sort-button">Apply Bubble Sort</button>
+        </form>
+        <div class="bubble_sort-output" id="output">
+            <h2>Sorted Array (Bubble Sort) is:</h2>
+            <p class="sort-result"></p>
+        </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 5%;">
+        <div class="bubble_sort-description">
+            <p>Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent
+                elements, and swaps them if they are in the wrong order. The pass through the list is repeated until
+                no swaps are needed, which indicates that the list is sorted. Bubble Sort is easy to understand and
+                implement, but it is not efficient for sorting large lists when compared to more advanced algorithms
+                such as Quick Sort or Merge Sort.</p>
+            <hr>
+            <h2>Algorithm Description</h2>
+            <p>The Bubble Sort algorithm works as follows:</p>
+            <ol>
+                <li>Start at the beginning of the array.</li>
+                <li>Compare the first two elements. If the first element is greater than the
+                    second, swap them.</li>
+                <li>Move to the next pair of elements and repeat step 2. Continue this
+                    process until you reach the end of the array.</li>
+                <li>After the first pass, the largest element will have "bubbled" to the end
+                    of the array.</li>
+                <li>Repeat steps 1-4 for the remaining elements, excluding the last one that
+                    is already sorted.</li>
+                <li>Continue to make passes through the array until no swaps are needed.
+                    This
+                    indicates that the array is sorted.</li>
+            </ol>
+            <p>Bubble Sort is a simple but inefficient sorting algorithm, and it is mainly used for educational
+                purposes to introduce students to the concept of sorting algorithms.</p>
+            <hr>
+            <h2>Historical Significance of Bubble Sort</h2>
+            <p>Bubble Sort is one of the earliest and simplest sorting algorithms. It was first described by John
+                B. Johnson in 1940 and then reinvented by Donald Shell in 1956, who introduced the idea of
+                diminishing
+                increment sorting. The algorithm gained historical significance as one of the first sorting
+                algorithms
+                ever proposed and served as a basis for more efficient sorting methods that followed.</p>
+            <hr>
+            <h2>Practical Applications</h2>
+            <p>While Bubble Sort is not used in practice for large datasets due to its inefficiency, it is still
+                employed in certain situations:</p>
+            <p><strong>Educational Purposes:</strong> Bubble Sort is often used in computer science and programming
+                courses to teach students about sorting algorithms and their basic principles.</p>
+            <p><strong>Small Datasets:</strong> It can be useful for sorting small datasets or lists where
+                simplicity
+                and ease of implementation are more important than speed.</p>
+            <p><strong>Algorithm Analysis:</strong> Bubble Sort is used for algorithm analysis and benchmarking,
+                providing a reference point for comparing the efficiency of other sorting algorithms.</p>
+
+            <hr>
+            <h2>Efficiency and Big O Notation</h2>
+            <p>The efficiency of the Bubble Sort algorithm is a topic of interest in algorithm analysis. Bubble Sort has
+                a simple and straightforward implementation but is not considered efficient for large datasets. Its
+                performance is characterized by the Big O notation.</p>
+            <p>The Big O notation, denoted as O(n^2), represents the upper bound of the worst-case time complexity for
+                Bubble Sort. In other words, in the worst-case scenario, Bubble Sort needs to make approximately n^2
+                comparisons and swaps, where n is the number of elements in the array. This quadratic time complexity
+                implies that Bubble Sort becomes significantly slower as the size of the dataset grows.</p>
+            <p>While Bubble Sort is suitable for educational purposes and small datasets, it is generally outperformed
+                by more efficient sorting algorithms like Quick Sort (O(n log n)) and Merge Sort (O(n log n)) for larger
+                datasets. As a result, it is not commonly used in real-world applications for sorting large amounts of
+                data.</p>
+            <hr>
+            <h2>History of Bubble Sort</h2>
+            <p>Bubble Sort is one of the simplest and earliest sorting algorithms, with a history dating back to 1940.
+                It was
+                first described by John B. Johnson, and later reinvented by Donald Shell in 1956, who introduced the
+                idea of
+                diminishing increment sorting. Bubble Sort's historical significance lies in being one of the first
+                sorting
+                algorithms ever proposed, laying the foundation for more efficient sorting methods that followed.</p>
+            <p>While Bubble Sort is not widely used for sorting large datasets due to its inefficiency, it remains an
+                educational tool. It is commonly used in computer science and programming courses to introduce students
+                to the
+                concepts of sorting algorithms and their basic principles. Bubble Sort's simplicity and ease of
+                understanding
+                have made it a reference point for comparing the efficiency of other sorting algorithms in algorithm
+                analysis and
+                benchmarking.</p>
+            <p>Although not practical for large-scale sorting tasks, Bubble Sort played a pivotal role in the history of
+                sorting algorithms and continues to be a valuable teaching tool for understanding the fundamental
+                concepts of
+                sorting.</p>
+
+        </div>
+    </div>
+
+</body>
+<script src="bubble_sort.js"></script>
+
+</html>

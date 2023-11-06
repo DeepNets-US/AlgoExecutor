@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gcd.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Fibonacci Sequence - AlgoExecuter</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="logo" style="color: rgb(186, 216, 244);"><strong>Greatest Common Divisor</strong></h1>
+    </div>
+    <div class="gcd-container">
+        <form id="gcd-form">
+            <div class="gcd-inputs">
+                <div class="gcd-input">
+                    <label style="color: rgb(17, 87, 152);" for="input-num1">Number One:</label>
+                    <input type="number" id="input-num1" required min="1">
+                </div>
+                <div class="gcd-input">
+                    <label style="color: rgb(17, 87, 152);" for="input-num2">Number Two:</label>
+                    <input type="number" id="input-num2" required min="1">
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <button type="button" id="calculate-button">Calculate</button>
+            </div>
+            <div class="gcd-result">
+                <h2>The Greatest Common Divisor (via Euclid Algorithm):</h2>
+                <p id="gcd-result-value" class="gcd-result-value" style="text-align: center;"></p>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="container" style="margin-bottom: 5%;">
+        <div class="gcd-description">
+            <p style="color: rgb(44, 20, 43);">The Greatest Common Divisor (GCD), alternatively referred to as the
+                greatest common factor or highest common factor, holds a pivotal position within number theory and
+                mathematics. It serves as a fundamental concept, symbolizing the most substantial positive integer that
+                can evenly divide two or more numbers without a remainder. The GCD's significance extends to a wide
+                array of mathematical algorithms and real-world applications, where it plays an indispensable role in
+                simplifying fractions, solving modular arithmetic problems, and optimizing various computational tasks,
+                underpinning the very foundation of mathematics and its practical utility.</p>
+            <hr>
+            <h2 style="color: rgb(17, 87, 152);">Mathematical Definition</h2>
+            <p style="color: rgb(44, 20, 43);">
+            <p>
+                Your mathematical description is accurate, but we can provide a more comprehensive mathematical
+                explanation of the Greatest Common Divisor (GCD):
+
+                In mathematical terms, the GCD of two or more integers, denoted as GCD(a, b), represents the largest
+                positive integer that divides both a and b without any remainder. This fundamental concept can be
+                defined formally as:
+                <br>
+                <br>
+
+                <strong>GCD(a, b) = max(d), where d is a positive integer, and d divides both a and b.</strong>
+
+                <br>
+                <br>
+                This definition encapsulates the essence of the GCD, illustrating that it is not only the greatest
+                common divisor of two numbers but also the largest positive integer that is a common factor of both
+                integers. The GCD serves as a cornerstone in number theory and mathematics, finding applications in
+                diverse fields where the precise division of integers is essential.
+            </p>
+            <hr>
+            <h2 style="color: rgb(17, 87, 152);">Euclidean Algorithm</h2>
+            <p style="color: rgb(44, 20, 43);">The Euclidean Algorithm is a time-tested and efficient method to compute
+                the
+                GCD of two integers. It is based on the observation that the GCD of two numbers remains the same if the
+                larger number is replaced by the difference between the larger and smaller numbers. The algorithm
+                iteratively applies this principle until the two numbers become equal, at which point the GCD is found.
+                This method is both simple and highly efficient, making it a fundamental tool in number theory and
+                computer science.</p>
+            <p style="color: rgb(44, 20, 43);"><strong>Euclidean Algorithm Steps:</strong></p>
+            <ol>
+                <li style="color: rgb(44, 20, 43);">Given two numbers, a and b, where a ≥ b, set a as the larger number
+                    and b as
+                    the smaller number.</li>
+                <li style="color: rgb(44, 20, 43);">Calculate the remainder of the division a ÷ b.</li>
+                <li style="color: rgb(44, 20, 43);">Replace a with b and b with the remainder obtained in the previous
+                    step.</li>
+                <li style="color: rgb(44, 20, 43);">Repeat steps 2 and 3 until b becomes zero.</li>
+                <li style="color: rgb(44, 20, 43);">The GCD is the non-zero value of a when b becomes zero.</li>
+            </ol>
+            <p style="color: rgb(44, 20, 43);">The Euclidean Algorithm provides an elegant and efficient solution for
+                computing the GCD, making it a cornerstone of number theory and mathematical problem-solving. It is
+                widely
+                used in various computational applications and serves as a fundamental building block for more complex
+                algorithms.</p>
+            <hr>
+            <h2 style="color: rgb(17, 87, 152);">Naive Algorithm (Simple Division Method)</h2>
+            <p style="color: rgb(44, 20, 43);">The naive algorithm for calculating the GCD is a straightforward method
+                often introduced to beginners in mathematics. This simple division method, although less efficient than
+                the Euclidean Algorithm, provides a foundational understanding of how the GCD can be determined.</p>
+            <p style="color: rgb(44, 20, 43);"><strong>Initial Values:</strong> To find the GCD of two integers, a and
+                b, using the naive algorithm, we begin by listing all the divisors of both numbers.</p>
+            <p style="color: rgb(44, 20, 43);"><strong>Common Divisors:</strong> We then identify the common divisors,
+                which are the integers that can evenly divide both a and b without leaving a remainder.</p>
+            <p style="color: rgb(44, 20, 43);"><strong>Largest Common Divisor:</strong> From the list of common
+                divisors, we select the largest one, which is the GCD of a and b.</p>
+            <p style="color: rgb(44, 20, 43);">The naive algorithm is a helpful teaching tool, as it illustrates the
+                concept of the GCD and the process of determining common divisors. However, it's worth noting that this
+                method can be inefficient for large numbers, as it involves checking numerous divisors. Nevertheless, it
+                serves as a fundamental building block in understanding more advanced algorithms and mathematical
+                concepts.</p>
+            <hr>
+            <h2 style="color: rgb(17, 87, 152);">Historical Significance of the GCD</h2>
+            <p style="color: rgb(44, 20, 43);">The concept of the Greatest Common Divisor (GCD) has played a pivotal
+                role in the history of mathematics and its applications. Its historical significance can be traced back
+                to ancient civilizations, where early mathematicians recognized its importance in solving various
+                mathematical problems.</p>
+            <p style="color: rgb(44, 20, 43);">Ancient mathematicians, including Euclid in his work "Elements," laid the
+                foundations for understanding the GCD and its properties. The GCD was used in various mathematical
+                contexts, such as solving Diophantine equations, which involve finding integer solutions to linear
+                equations.</p>
+            <p style="color: rgb(44, 20, 43);">Throughout history, the GCD has continued to be a fundamental concept in
+                number theory and mathematics, influencing the development of algorithms and mathematical techniques.
+                Its historical significance lies in its role as a cornerstone of mathematical problem-solving, from
+                ancient times to the present day.</p>
+            <hr>
+
+            <h2 style="color: rgb(17, 87, 152);">Practical Applications of the GCD</h2>
+            <p style="color: rgb(44, 20, 43);">The Greatest Common Divisor (GCD) is not merely a historical concept but
+                a mathematical tool with diverse practical applications across various fields:</p>
+            <p style="color: rgb(44, 20, 43);"><strong>Computer Science:</strong> In computer science, the GCD is
+                utilized in algorithms and data structures for tasks like simplifying fractions, optimizing code, and
+                implementing cryptographic systems.</p>
+            <p style="color: rgb(44, 20, 43);"><strong>Engineering:</strong> Engineers apply the GCD in tasks involving
+                measurements and conversions, ensuring accurate results in fields like telecommunications, signal
+                processing, and control systems.</p>
+            <p style="color: rgb(44, 20, 43);"><strong>Cryptography:</strong> The GCD plays a crucial role in encryption
+                and decryption processes, contributing to the security of data and communication systems.</p>
+            <p style="color: rgb(44, 20, 43);"><strong>Finance:</strong> In financial modeling and analysis, the GCD
+                aids in calculating interest rates, managing investments, and optimizing financial operations.</p>
+            <p style="color: rgb(44, 20, 43);"><strong>Manufacturing and Quality Control:</strong> Industries use the
+                GCD to ensure quality control, as it helps find common factors in measurements, facilitating the
+                production of consistent and reliable products.</p>
+            <p style="color: rgb(44, 20, 43);">The practical applications of the GCD underscore its importance beyond
+                mathematics, demonstrating its relevance in addressing real-world challenges and optimizing processes
+                across various domains.</p>
+
+        </div>
+    </div>
+
+
+</body>
+<script src="gcd.js"></script>
+
+</html>

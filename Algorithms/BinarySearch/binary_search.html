@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="binary_search.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Binary Search - AlgoExecuter</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="logo" style="color: crimson;"><strong>Binary Search</strong></h1>
+    </div>
+
+    <div class="binary_search-form" style="margin-top: 10%;">
+        <form id="binary_search-form" onsubmit="return false;">
+            <label for="input-array" style="font-size: 24px; color: crimson">Enter the Sorted Array:</label>
+            <input type="text" id="input-array" required>
+            <label for="target-number" style="font-size: 24px; color: crimson">Enter the Target Value:</label>
+            <input type="number" id="target-number" min="1" step="1" required>
+            <button id="search-button">Apply Binary Search</button>
+        </form>
+        <div class="binary_search-output" id="output">
+            <h2>Search Result:</h2>
+            <p class="search-result"></p>
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-bottom: 5%;">
+        <div class="binary_search-description">
+            <p>Binary Search is a highly efficient algorithm for finding a specific target value within a sorted array
+                or list. It employs a divide-and-conquer strategy to systematically search for the target value and
+                efficiently determine its presence or absence in the dataset.</p>
+            <hr>
+            <h2>Algorithm Description</h2>
+            <p>Binary Search is a comparison-based searching algorithm that operates on sorted datasets. It is known
+                for its speed and efficiency in locating specific elements. The algorithm works as follows:</p>
+            <ol>
+                <li>Initialize two pointers, 'left' and 'right,' to the beginning and end of the sorted array,
+                    respectively.</li>
+                <li>While 'left' is less than or equal to 'right,' perform the following:
+                    <ul>
+                        <li>Calculate the middle index, 'mid,' as the average of 'left' and 'right.'</li>
+                        <li>Compare the element at 'mid' with the target value:
+                            <ul>
+                                <li>If they match, the target is found at 'mid.'</li>
+                                <li>If the target is less than the element at 'mid,' update 'right' to 'mid - 1.'
+                                </li>
+                                <li>If the target is greater than the element at 'mid,' update 'left' to 'mid + 1.'</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>If the target value is not found after the loop, it does not exist in the dataset.</li>
+            </ol>
+            <p>Binary Search efficiently reduces the search space by half with each comparison, making it a
+                fast and reliable algorithm for finding specific values within sorted datasets.</p>
+            <hr>
+            <h2>Practical Applications</h2>
+            <p>Binary Search is widely used in various applications and domains, including:</p>
+            <p><strong>Information Retrieval:</strong> It serves as the basis for searching and retrieving data in
+                databases, file systems, and other structured collections of information.</p>
+            <p><strong>Computer Science and Algorithms:</strong> Binary Search is a fundamental algorithm used in
+                computer science courses and serves as a building block for more complex search and sort algorithms.</p>
+            <p><strong>Telecommunications:</strong> It is employed in telecommunications networks to efficiently locate
+                specific data packets or routing information.</p>
+            <p><strong>Game Development:</strong> Binary Search is used in game development to search for specific
+                game assets or elements efficiently.</p>
+            <p><strong>E-commerce:</strong> It is applied in e-commerce platforms to facilitate product searches and
+                filter results.</p>
+            <hr>
+            <h2>Efficiency and Big O Notation</h2>
+            <p>Binary Search is known for its efficiency and is characterized by the Big O notation:</p>
+            <p>The Big O notation, denoted as O(log n), signifies Binary Search's time complexity. In the worst-case
+                scenario, it efficiently reduces the search space by half with each comparison, resulting in a
+                logarithmic time complexity. This makes Binary Search one of the fastest search algorithms for sorted
+                datasets.</p>
+            <p>Binary Search's efficiency and speed make it an essential tool for applications that require
+                quick and reliable search operations.</p>
+            <hr>
+            <h2>History of Binary Search</h2>
+            <p>Binary Search is a fundamental algorithm that has a rich history dating back to early computer science
+                and mathematical principles. It is closely associated with the development of algorithms and the
+                exploration of efficient search methods.</p>
+            <p>The concept of Binary Search can be traced back to ancient civilizations and mathematical principles.
+                However, its formalization and application in computer science and programming were significant
+                milestones in the history of this algorithm.</p>
+            <p>Binary Search remains a cornerstone of computer science, providing an essential technique for efficient
+                search and retrieval of data.</p>
+        </div>
+    </div>
+</body>
+<script src="binary_search.js"></script>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lcm.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Least Common Multiple - AlgoExecuter</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="logo" style="color: darkorange;"><strong>Least Common Multiple</strong></h1>
+    </div>
+    <div class="lcm-container">
+        <form id="lcm-form">
+            <div class="lcm-inputs">
+                <div class="lcm-input">
+                    <label style="color: darkorange;" for="input-num1">Number One:</label>
+                    <input type="number" id="input-num1" required min="1">
+                </div>
+                <div class="lcm-input">
+                    <label style="color: darkorange;" for="input-num2">Number Two:</label>
+                    <input type="number" id="input-num2" required min="1">
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <button type="button" id="calculate-button">Calculate</button>
+            </div>
+            <div class="lcm-result">
+                <h2>The Least Common Multiple (via New Algorithm):</h2>
+                <p id="lcm-result-value" class="lcm-result-value" style="text-align: center;"></p>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="container" style="margin-bottom: 5%;">
+        <div class="lcm-description">
+            <p>The Least Common Multiple (LCM), alternatively known as the least common
+                multiple, is a vital concept in number theory and mathematics. It represents the smallest positive
+                integer that is evenly divisible by two or more numbers. The LCM plays a central role in various
+                mathematical algorithms and real-world applications, where it is essential for simplifying fractions,
+                solving modular arithmetic problems, and optimizing computational tasks. This concept is foundational
+                to mathematics, with practical utility spanning diverse fields.</p>
+            <hr>
+            <h2 style="color: darkorange;">Mathematical Definition</h2>
+            <p>
+            <p>
+                The mathematical definition of the Least Common Multiple (LCM) is fundamental to understanding its role
+                in number theory and mathematics:
+
+                In mathematical terms, the LCM of two or more integers, denoted as LCM(a, b), represents the smallest
+                positive integer that is divisible by both a and b. This concept can be formally defined as:
+
+                <br>
+                <br>
+
+                <strong>LCM(a, b) = min(m), where m is a positive integer, and m is divisible by both a and b.</strong>
+
+                <br>
+                <br>
+                This definition encapsulates the essence of the LCM, illustrating that it is not only the least common
+                multiple of two numbers but also the smallest positive integer that can be evenly divided by both
+                integers. The LCM is a cornerstone of number theory and mathematics, finding applications in diverse
+                fields where precise division of integers is essential.
+            </p>
+            <hr>
+            <h2 style="color: darkorange;">New Algorithm for Calculating the LCM</h2>
+            <p>The new algorithm for calculating the Least Common Multiple (LCM) is a
+                highly efficient method that simplifies the process of finding the LCM of two integers. This algorithm
+                builds on the Euclidean Algorithm for the Greatest Common Divisor and extends it to calculate the LCM.
+            </p>
+            <p><strong>New Algorithm Steps:</strong></p>
+            <ol>
+                <li style="color: darkgreen;">Given two numbers, a and b, where a ≥ b, set a as the larger number
+                    and b as
+                    the smaller number.</li>
+                <li style="color: darkgreen;">Calculate the GCD of a and b using the Euclidean Algorithm.</li>
+                <li style="color: darkgreen;">The LCM of a and b is given by:
+                    <br>
+                    <br>
+                    <strong>LCM(a, b) = (a * b) / GCD(a, b)</strong>
+                </li>
+                <li style="color: darkgreen;">The result is the LCM of the given integers.</li>
+            </ol>
+            <p>This new algorithm leverages the efficiency of the GCD calculation using
+                the Euclidean Algorithm and provides a straightforward method to obtain the LCM. It is widely used in
+                mathematical applications and computational tasks, simplifying the determination of the least common
+                multiple.</p>
+            <hr>
+            <h2 style="color: darkorange;">Historical Significance of the LCM</h2>
+            <p>The concept of the Least Common Multiple (LCM) has historical significance
+                dating back to ancient civilizations. Early mathematicians recognized the importance of finding the
+                least common multiple of numbers, especially in the context of solving problems involving common
+                multiples and divisibility.</p>
+            <p>The understanding of the LCM has evolved over time, with contributions
+                from mathematicians like Euclid. It has been employed in various mathematical contexts and
+                problem-solving
+                scenarios throughout history, making it a key concept in number theory.</p>
+            <hr>
+
+            <h2 style="color: darkorange;">Practical Applications of the LCM</h2>
+            <p>The Least Common Multiple (LCM) finds extensive practical applications
+                across various fields:</p>
+            <p><strong>Mathematics and Education:</strong> In mathematical education,
+                the LCM is essential for teaching students about least common multiples, simplifying fractions, and
+                solving problems related to multiple integers.</p>
+            <p><strong>Engineering and Construction:</strong> Engineers and architects
+                use the LCM to determine the minimum common dimensions and sizes for various components in construction
+                projects, ensuring efficiency and cost-effectiveness.</p>
+            <p><strong>Time Management:</strong> The LCM plays a role in time
+                management,
+                helping individuals find the least common multiple of time intervals, which is useful in planning
+                schedules and events.</p>
+            <p><strong>Transportation and Logistics:</strong> In logistics and
+                transportation planning, the LCM aids in optimizing routes, schedules, and resource allocation,
+                improving efficiency and reducing costs.</p>
+            <p><strong>Scientific Research:</strong> Scientists use the LCM for various
+                data analysis tasks, including synchronization, data sampling, and experimental design.</p>
+            <p>The practical applications of the LCM highlight its significance in
+                addressing real-world challenges and optimizing processes across a wide range of domains.</p>
+        </div>
+    </div>
+
+</body>
+<script src="lcm.js"></script>
+
+</html>

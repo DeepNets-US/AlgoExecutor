@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(197, 109, 109);
+}
+
+body h2 {
+    color: rgb(17, 87, 152);
+}
+
+body p {
+    color: rgb(44, 20, 43);
+}
+
+#header {
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(26, 36, 35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: translateX(-80%);
+    }
+
+    100% {
+        transform: translateX(80%);
+    }
+}
+
+#logo {
+    animation: textAnimation 10s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+.gcd-container {
+    margin: 20px auto;
+    margin-top: 8%;
+    max-width: 85%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.gcd-inputs {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gcd-input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.gcd-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.gcd-input input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#calculate-button {
+    width: 25%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#calculate-button:hover {
+    background-color: #0056b3;
+}
+
+.gcd-result {
+    text-align: left;
+    margin-top: 15px;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.gcd-result h2 {
+    font-size: 1.5em;
+}
+
+.gcd-result-value {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+.container {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.gcd-description {
+    text-align: left;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}

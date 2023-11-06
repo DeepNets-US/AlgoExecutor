@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="merge_sort.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Merge Sort - AlgoExecuter</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="logo" style="color: crimson"><strong>Merge Sort</strong></h1>
+    </div>
+
+    <div class="merge_sort-form" style="margin-top: 10%;">
+        <form id="merge_sort-form" onsubmit="return false;">
+            <label for="input-array" style="font-size: 24px; color: crimson">Enter the Array:</label>
+            <input type="text" id="input-array" required>
+            <button id="sort-button">Apply Merge Sort</button>
+        </form>
+        <div class="merge_sort-output" id="output">
+            <h2>Sorted Array (Merge Sort) is:</h2>
+            <p class="sort-result"></p>
+        </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 5%;">
+        <div class="merge_sort-description">
+            <p>Merge Sort is a highly efficient and stable sorting algorithm that divides a list into smaller
+                sub-lists, sorts those sub-lists, and then merges them back into a single sorted list. It is a
+                divide-and-conquer algorithm that provides reliable and consistent performance, making it suitable for
+                sorting large datasets.</p>
+            <hr>
+            <h2>Algorithm Description</h2>
+            <p>Merge Sort is a comparison-based sorting algorithm that employs a divide-and-conquer strategy to sort a
+                list or array of elements. It is known for its stability, making it a reliable choice for sorting data
+                while preserving the order of equal elements. The algorithm works as follows:</p>
+            <ol>
+                <li>Divide: The unsorted list is divided into n sub-lists, each containing one
+                    element (initially). This division process continues until each sub-list contains only one element,
+                    which is, by definition, sorted.</li>
+                <li>Conquer: The algorithm then merges sub-lists in pairs, repeatedly
+                    combining
+                    two sorted sub-lists to produce a new, sorted sub-list. This process continues until there is only
+                    one sub-list remaining, which is the fully sorted list.</li>
+            </ol>
+            <p>Merge Sort's divide-and-conquer approach ensures that the sub-lists are sorted and combined
+                systematically, resulting in a fully sorted list. This algorithm is characterized by its stability,
+                which means that it preserves the relative order of equal elements in the sorted output.</p>
+            <hr>
+            <h2>Practical Applications</h2>
+            <p>Merge Sort is a versatile and widely used sorting algorithm with practical applications in various
+                domains:</p>
+            <p><strong>Computer Science and Software Development:</strong> Merge Sort is commonly used for internal
+                sorting in applications and systems. It serves as a foundation for other sorting and searching
+                algorithms. Its stability makes it ideal for sorting data where maintaining the original order of equal
+                elements is important.</p>
+            <p><strong>External Sorting:</strong> Merge Sort's efficiency and ability to handle large datasets make it
+                suitable for external sorting. In this context, data is sorted on external storage devices like hard
+                drives, where it minimizes disk I/O and optimizes the use of available memory.</p>
+            <p><strong>Data Processing:</strong> Merge Sort plays a key role in data processing tasks such as merging
+                data from multiple sources and databases while maintaining a sorted order. It is used in applications
+                where sorting is essential for efficient data retrieval.</p>
+            <p><strong>Parallel and Distributed Computing:</strong> Merge Sort can be adapted for parallel and
+                distributed computing environments, where it provides efficient and scalable sorting. It is employed in
+                scenarios where high-performance computing and data processing are required.</p>
+            <hr>
+            <h2>Efficiency and Big O Notation</h2>
+            <p>The efficiency of Merge Sort is a topic of interest in algorithm analysis. The algorithm is characterized
+                by its predictable and efficient performance, as expressed in the Big O notation:</p>
+            <p>The Big O notation, denoted as O(n log n), represents the time complexity of Merge Sort. In other words,
+                Merge Sort's runtime grows in a close-to-linear fashion with the size of the dataset. It is considered
+                one of the most efficient sorting algorithms available.</p>
+            <p>Merge Sort's stable and consistent performance makes it a valuable tool for sorting tasks in various
+                domains. It excels in scenarios where data integrity, stability, and efficient sorting are crucial, and
+                its efficient divide-and-conquer approach ensures that the algorithm maintains high performance across
+                different datasets and sizes.</p>
+            <hr>
+            <h2>History of Merge Sort</h2>
+            <p>Merge Sort is an efficient, general-purpose, and comparison-based sorting algorithm that was invented by
+                John von
+                Neumann in 1945. The algorithm's development was closely associated with the early days of computer
+                science and
+                electronic computing. During this period, computer scientists and engineers were exploring novel
+                techniques for
+                handling and manipulating data.</p>
+            <p>John von Neumann's contribution to the field of computer science was significant, and Merge Sort is just
+                one of
+                his many innovations. This sorting algorithm stands out for its exceptional stability and consistent
+                performance.</p>
+            <p>Over the years, Merge Sort has been widely adopted and adapted for various applications in data
+                processing,
+                scientific computing, and more. Its stability, predictable time complexity, and suitability for large
+                datasets
+                have made it a fundamental sorting algorithm in computer science and software development.</p>
+
+        </div>
+    </div>
+
+</body>
+<script src="merge_sort.js"></script>
+
+</html>
