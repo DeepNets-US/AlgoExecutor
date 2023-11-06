@@ -35,7 +35,7 @@ AlgoExecutor is a web application designed for exploring fundamental algorithms 
 ![image](https://github.com/DeepNets-US/AlgoExecutor/assets/118154709/f37dcbad-50d1-4ad9-9694-e3e276aa6db4)
 ![image](https://github.com/DeepNets-US/AlgoExecutor/assets/118154709/9542c8ed-3095-4361-8c24-6285886e0b6d)
 ![image](https://github.com/DeepNets-US/AlgoExecutor/assets/118154709/e7563a4e-71fc-45e8-9bd2-218415f29c7e)
-
+![image](https://github.com/DeepNets-US/AlgoExecutor/assets/118154709/2b10491e-47a3-435e-b0d0-eb58d85b235c)
 
 ## Usage
 
@@ -63,6 +63,6 @@ If you'd like to contribute to AlgoExecutor, please follow these guidelines:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Private License (details in the License file).
 
 Feel free to customize this template with your specific project details, including the links, images, and content. Make sure to add the appropriate links and images to your project, including screenshots and the AlgoExecutor logo. This README will provide a professional and informative introduction to your AlgoExecutor project on GitHub.
