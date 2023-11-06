@@ -39,7 +39,7 @@ AlgoExecutor is a web application designed for exploring fundamental algorithms 
 
 ## Usage
 
-1. Visit the [AlgoExecutor Website](algo-executor.vercel.app) to explore the algorithms.
+1. Visit the algo-executor.vercel.app to explore the algorithms.
 2. Navigate through the different pages to access algorithm descriptions, official documents, and video-based explanations.
 3. Interact with the individual algorithm pages to generate sequences and learn about their significance.
 
